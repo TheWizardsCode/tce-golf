@@ -14,9 +14,9 @@ import {
   executeTurn,
   createAiVisibleSharedState,
   createAiVisiblePlayerState,
-} from '../example-games/golf/GolfGame';
-import { TranscriptRecorder } from '../example-games/golf/GameTranscript';
-import { AiPlayer, GreedyStrategy } from '../example-games/golf/AiStrategy';
+} from '../GolfGame';
+import { TranscriptRecorder } from '../GameTranscript';
+import { AiPlayer, GreedyStrategy } from '../AiStrategy';
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, resolve } from 'path';
 

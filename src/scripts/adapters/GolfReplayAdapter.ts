@@ -21,8 +21,8 @@ import type {
   ReplayAdapter,
   ValidationResult,
   TakeoverOptions,
-} from './ReplayAdapter';
-import type { CardSnapshot } from '../../src/core-engine/TranscriptTypes';
+} from '../../../../scripts/adapters/ReplayAdapter';
+import type { CardSnapshot } from '../../../../src/core-engine/TranscriptTypes';
 
 // ── Golf-specific transcript types ─────────────────────────
 
