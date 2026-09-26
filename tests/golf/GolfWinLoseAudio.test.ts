@@ -9,7 +9,7 @@
 import { describe, expect, it } from 'vitest';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { SFX_KEYS } from '../../example-games/golf/scenes/GolfConstants';
+import { SFX_KEYS } from '../../src/scenes/GolfConstants';
 
 /**
  * The Golf scene loads these via

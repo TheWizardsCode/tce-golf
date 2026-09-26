@@ -1,12 +1,12 @@
 import { describe, it, expect } from 'vitest';
 import { createCard } from '@card-system/Card';
-import { createGolfGrid } from '../../example-games/golf/GolfGrid';
-import type { GolfGrid } from '../../example-games/golf/GolfGrid';
+import { createGolfGrid } from '../../src/GolfGrid';
+import type { GolfGrid } from '../../src/GolfGrid';
 import {
   cardPointValue,
   scoreGrid,
   scoreVisibleCards,
-} from '../../example-games/golf/GolfScoring';
+} from '../../src/GolfScoring';
 
 /** Helper: build a grid from rank strings for easy test setup. */
 function gridFromRanks(

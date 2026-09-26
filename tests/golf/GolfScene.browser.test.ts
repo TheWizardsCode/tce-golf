@@ -22,7 +22,7 @@ async function bootGame(): Promise<Phaser.Game> {
 
   // Import the factory dynamically to avoid module-level side effects
   const { createGolfGame } = await import(
-    '../../example-games/golf/createGolfGame'
+    '../../src/createGolfGame'
   );
   const game = createGolfGame({ type: Phaser.CANVAS });
 

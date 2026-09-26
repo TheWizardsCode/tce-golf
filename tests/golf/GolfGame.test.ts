@@ -8,13 +8,13 @@ import {
   enumerateLegalMoves,
   enumerateDrawSources,
   executeTurn,
-} from '../../example-games/golf/GolfGame';
-import { countFaceUp, isGridFullyRevealed } from '../../example-games/golf/GolfGrid';
+} from '../../src/GolfGame';
+import { countFaceUp, isGridFullyRevealed } from '../../src/GolfGrid';
 import { createCard } from '@card-system/Card';
-import { createGolfGrid } from '../../example-games/golf/GolfGrid';
-import type { GolfSharedState } from '../../example-games/golf/GolfGame';
+import { createGolfGrid } from '../../src/GolfGrid';
+import type { GolfSharedState } from '../../src/GolfGame';
 import { Pile } from '@card-system/Pile';
-import { createRoundEndState } from '../../example-games/golf/GolfRules';
+import { createRoundEndState } from '../../src/GolfRules';
 
 // Deterministic RNG for testing (simple LCG)
 function createTestRng(seed: number = 42): () => number {

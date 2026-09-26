@@ -5,7 +5,7 @@
  * The adapter derives grid cell positions, pile centres, and UI anchor points
  * from the resolved SLL zones.
  *
- * @module example-games/golf/scenes/GolfLayoutAdapter
+ * @module src/scenes/GolfLayoutAdapter
  */
 
 import { anchorPoint } from '@ui/screen-layout';

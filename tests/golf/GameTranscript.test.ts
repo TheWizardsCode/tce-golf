@@ -8,23 +8,23 @@ import {
   snapshotCard,
   snapshotBoard,
   isV2Transcript,
-} from '../../example-games/golf/GameTranscript';
+} from '../../src/GameTranscript';
 import type {
   GameTranscript,
   TurnRecord,
   BoardSnapshot,
   CardSnapshot,
-} from '../../example-games/golf/GameTranscript';
+} from '../../src/GameTranscript';
 import {
   setupGolfGame,
   executeTurn,
   createAiVisibleSharedState,
   createAiVisiblePlayerState,
-} from '../../example-games/golf/GolfGame';
-import type { GolfAction } from '../../example-games/golf/GolfGame';
-import { AiPlayer, RandomStrategy, GreedyStrategy } from '../../example-games/golf/AiStrategy';
+} from '../../src/GolfGame';
+import type { GolfAction } from '../../src/GolfGame';
+import { AiPlayer, RandomStrategy, GreedyStrategy } from '../../src/AiStrategy';
 import { createCard } from '@card-system/Card';
-import { createGolfGrid } from '../../example-games/golf/GolfGrid';
+import { createGolfGrid } from '../../src/GolfGrid';
 
 // Deterministic RNG
 function createTestRng(seed: number = 42): () => number {

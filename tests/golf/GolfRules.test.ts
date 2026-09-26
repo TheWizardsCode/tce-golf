@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { createCard } from '@card-system/Card';
-import { createGolfGrid } from '../../example-games/golf/GolfGrid';
-import type { GolfGrid } from '../../example-games/golf/GolfGrid';
+import { createGolfGrid } from '../../src/GolfGrid';
+import type { GolfGrid } from '../../src/GolfGrid';
 import {
   checkMoveLegality,
   isLegalMove,
@@ -12,8 +12,8 @@ import {
   checkRoundEnd,
   isInFinalTurns,
   needsFinalTurn,
-} from '../../example-games/golf/GolfRules';
-import type { GolfMove } from '../../example-games/golf/GolfRules';
+} from '../../src/GolfRules';
+import type { GolfMove } from '../../src/GolfRules';
 
 /** Helper: create a 9-card grid, all face-down. */
 function makeGrid(): GolfGrid {

@@ -5,7 +5,7 @@
  * repo carries only the shared AdapterRegistry framework tests.
  */
 import { describe, it, expect, beforeEach } from 'vitest';
-import { GolfReplayAdapter } from '../../example-games/golf/scripts/adapters/GolfReplayAdapter';
+import { GolfReplayAdapter } from '../../src/scripts/adapters/GolfReplayAdapter';
 
 // ── Fixtures ────────────────────────────────────────────────
 function makeBCTranscript(overrides: Record<string, unknown> = {}): Record<string, unknown> {

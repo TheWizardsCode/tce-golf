@@ -26,7 +26,7 @@ async function bootGame(): Promise<Phaser.Game> {
   document.body.appendChild(container);
 
   const { createGolfGame } = await import(
-    '../../example-games/golf/createGolfGame'
+    '../../src/createGolfGame'
   );
   const game = createGolfGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'GolfScene');

@@ -1,0 +1,11 @@
+{
+  "$comment": "Single-game preset for tce-golf (F4 / CG-0MTRO72W5003ECAK). Gym is core-owned and always present; exactly one game is selected.",
+  "games": [
+    {
+      "id": "golf",
+      "path": ".",
+      "scenePath": "src/scenes/GolfScene.ts",
+      "adapterPath": "src/scripts/adapters/GolfReplayAdapter.ts"
+    }
+  ]
+}

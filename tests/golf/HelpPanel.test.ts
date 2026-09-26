@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import helpContent from '../../example-games/golf/help-content.json';
+import helpContent from '../../src/help-content.json';
 
 describe('Golf help-content.json', () => {
   it('should be a non-empty array', () => {

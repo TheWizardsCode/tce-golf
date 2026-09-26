@@ -14,7 +14,7 @@
 import { describe, it, expect, afterEach, afterAll } from 'vitest';
 import Phaser from 'phaser';
 import type { GameEventEmitter } from '@core-engine/GameEventEmitter';
-import type { BoardSnapshot, CardSnapshot } from '../../example-games/golf/GameTranscript';
+import type { BoardSnapshot, CardSnapshot } from '../../src/GameTranscript';
 import { waitForScene } from '@core-tests/helpers/waitForScene';
 
 // ── Helpers ─────────────────────────────────────────────────
@@ -41,7 +41,7 @@ async function bootGame(): Promise<Phaser.Game> {
   document.body.appendChild(container);
 
   const { createGolfGame } = await import(
-    '../../example-games/golf/createGolfGame'
+    '../../src/createGolfGame'
   );
   const game = createGolfGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'GolfScene');

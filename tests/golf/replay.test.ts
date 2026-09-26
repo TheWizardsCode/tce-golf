@@ -20,7 +20,7 @@ import * as os from 'node:os';
 const PROJECT_ROOT = path.resolve(__dirname, '../..');
 const FIXTURE_TRANSCRIPT = path.join(
   PROJECT_ROOT,
-  'example-games/golf/tests/fixtures/transcripts/fixture-game.json',
+  'src/tests/fixtures/transcripts/fixture-game.json',
 );
 
 // ── Helpers ─────────────────────────────────────────────────
@@ -40,7 +40,7 @@ function runReplay(
   const start = Date.now();
   const result = spawnSync(
     'node',
-    ['--import', 'tsx/esm', 'scripts/replay.ts', ...args],
+    ['--import', 'tsx/esm', 'core/scripts/replay.ts', ...args],
     {
       cwd: PROJECT_ROOT,
       encoding: 'utf-8',

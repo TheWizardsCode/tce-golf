@@ -8,8 +8,8 @@ import {
   getGridCard,
   isGridFullyRevealed,
   countFaceUp,
-} from '../../example-games/golf/GolfGrid';
-import type { GolfGrid } from '../../example-games/golf/GolfGrid';
+} from '../../src/GolfGrid';
+import type { GolfGrid } from '../../src/GolfGrid';
 
 /** Helper: create a 9-card grid, all face-down by default. */
 function makeGrid(faceUp: boolean = false): GolfGrid {

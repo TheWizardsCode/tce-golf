@@ -14,14 +14,14 @@ import {
   executeTurn,
   createAiVisibleSharedState,
   createAiVisiblePlayerState,
-} from '../../example-games/golf/GolfGame';
-import type { GolfSession } from '../../example-games/golf/GolfGame';
-import { AiPlayer, RandomStrategy, GreedyStrategy } from '../../example-games/golf/AiStrategy';
-import type { AiStrategy } from '../../example-games/golf/AiStrategy';
-import { TranscriptRecorder } from '../../example-games/golf/GameTranscript';
-import type { GameTranscript } from '../../example-games/golf/GameTranscript';
-import { scoreGrid } from '../../example-games/golf/GolfScoring';
-import { isGridFullyRevealed } from '../../example-games/golf/GolfGrid';
+} from '../../src/GolfGame';
+import type { GolfSession } from '../../src/GolfGame';
+import { AiPlayer, RandomStrategy, GreedyStrategy } from '../../src/AiStrategy';
+import type { AiStrategy } from '../../src/AiStrategy';
+import { TranscriptRecorder } from '../../src/GameTranscript';
+import type { GameTranscript } from '../../src/GameTranscript';
+import { scoreGrid } from '../../src/GolfScoring';
+import { isGridFullyRevealed } from '../../src/GolfGrid';
 import { createSeededRng } from '@core-engine/SeededRng';
 
 // ── Helpers ─────────────────────────────────────────────────

@@ -15,26 +15,26 @@ import {
   countVisibleRanks,
   computeColumnBonus,
   DEFAULT_GREEDY_CONFIG,
-} from '../../example-games/golf/AiStrategy';
-import type { GreedyStrategyConfig } from '../../example-games/golf/AiStrategy';
+} from '../../src/AiStrategy';
+import type { GreedyStrategyConfig } from '../../src/AiStrategy';
 import {
   setupGolfGame,
   executeTurn,
   createAiVisibleSharedState,
   createAiVisiblePlayerState,
-} from '../../example-games/golf/GolfGame';
+} from '../../src/GolfGame';
 import type {
   GolfSharedState,
   AiVisibleSharedState,
   AiVisiblePlayerState,
   AiVisibleGrid,
-} from '../../example-games/golf/GolfGame';
-import { isLegalMove } from '../../example-games/golf/GolfRules';
+} from '../../src/GolfGame';
+import { isLegalMove } from '../../src/GolfRules';
 import { createCard } from '@card-system/Card';
 import { CardMemoryTracker } from '@ai/CardMemoryTracker';
-import { createGolfGrid } from '../../example-games/golf/GolfGrid';
+import { createGolfGrid } from '../../src/GolfGrid';
 import { Pile } from '@card-system/Pile';
-import { createRoundEndState } from '../../example-games/golf/GolfRules';
+import { createRoundEndState } from '../../src/GolfRules';
 
 // Deterministic RNG for testing
 function createTestRng(seed: number = 42): () => number {
